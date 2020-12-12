@@ -14,6 +14,7 @@ window.addEventListener('load', function() {
          alert("All fields required!")
          event.preventDefault();
       } 
+      //TODO: Fix validation of datatype
       else if (pilotName.value !== typeof "string" || copilotName.value !== typeof "string" || fuelLevelConvert !== typeof "number" || cargoMassConvert !== typeof "number") {
          alert("Incorrect data type!")
          event.preventDefault();
