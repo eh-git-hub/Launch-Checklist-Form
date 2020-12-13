@@ -17,7 +17,7 @@ window.addEventListener('load', function(event) {
       let cargoMass = (document.querySelector("input[name=cargoMass]"));
       let cargoMassTest = Number(cargoMass.value);
 
-      if (pilotName.value === "" || copilotName.value === "" || fuelLevel === "" || cargoMass === ""){
+      if (pilotName.value === "" || copilotName.value === "" || fuelLevel.value === "" || cargoMass.value === ""){
          alert("All fields required!")
          //event.preventDefault();
       } 
