@@ -1,5 +1,7 @@
 h1 {
     text-align: center;
+    color: black;
+    text-shadow: 2px 12px 20px #6441A4, 0 0 25px #6441A4, 0 0 5px #6441A4;
 }
 
 div {
@@ -11,20 +13,21 @@ div {
 }
 
 #launchForm {
-    background-color: #ECF0F1;
+    background-color: #f4f0ec
+    ;
     text-align: center;
     margin: auto;
     width: 25%;
-    border: 3px solid black;
+    border: 3px solid #6441A4;
     padding: 10px;
 }
 
 #launchStatusCheck {
-    background-color: #ECF0F1;
+    background-color: #f4f0ec;
     text-align: center;
     margin: 50px auto;
     width: 50%;
-    border: 3px solid black;
+    border: 3px solid #6441A4;
     padding: 10px;
 }
 
@@ -34,25 +37,34 @@ div {
 }
 
 #missionTarget {
-    background-color: #ECF0F1;
+    background-color: #f4f0ec; 
+    /* isabelline color */
     text-align: center;
     margin: 50px auto;
     width: 50%;
-    border: 3px solid black;
+    border: 3px solid #6441A4;
     padding: 10px;
 }
 
 button {
-    background-color: #419f6a;
+    background-color: #6441A4;
     border: none;
     color: white;
     border-radius: 8px;
     width: 25%;
     height: 30px;
     margin: 10px 0;
+    /* box-shadow: 5px 10px #888888; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 
 body {
-    background-color: #419f6a;
+    background-color: #fafafa;
+}
+
+#planetList {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
 }
