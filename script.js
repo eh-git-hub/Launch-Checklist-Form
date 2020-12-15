@@ -1,6 +1,6 @@
 // Write your JavaScript code here!
 window.addEventListener('load', function(event) {
-   document.getElementById("faultyItems").style.visibility = "visible";
+//document.getElementById("faultyItems").style.visibility = "visible";
    //event handler for button click
    let form = document.querySelector("form");
    form.addEventListener("submit", function(event){
@@ -24,7 +24,10 @@ window.addEventListener('load', function(event) {
       else if (!isNaN(pilotName.value) || !isNaN(copilotName.value) || isNaN(fuelLevelTest) ||  isNaN(cargoMassTest)) {
          alert("Incorrect data type!")
          //event.preventDefault();
-      }
+      } else {
+         document.getElementById("faultyItems").style.visibility = "visible";
+         
+      };
 
       // console.log(`this is the value pilotName ${pilotName.value}`);
       // console.log(`this is the value copilotName ${copilotName.value}`);
