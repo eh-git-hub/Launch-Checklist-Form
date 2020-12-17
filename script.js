@@ -26,7 +26,7 @@ window.addEventListener('load', function(event) {
          //event.preventDefault();
       } else {
          document.getElementById("faultyItems").style.visibility = "visible";
-         
+
       };
 
       // console.log(`this is the value pilotName ${pilotName.value}`);
@@ -40,6 +40,8 @@ window.addEventListener('load', function(event) {
       document.getElementById("copilotStatus").innerHTML = `Co-pilot ${copilotName.value} Ready`;
 
       if (fuelLevel.value < 10000 && cargoMass.value > 10000){
+         document.getElementById("pilotStatus").innerHTML = `Pilot ${pilotName.value} not ready`;
+      document.getElementById("copilotStatus").innerHTML = `Co-pilot ${copilotName.value} not ready`;
          document.getElementById("fuelStatus").innerHTML = "There is not enough fuel for the journey!";
          document.getElementById("cargoStatus").innerHTML = "There is too much mass for the shuttle to take off!";
          document.getElementById("launchStatus").innerHTML = "Shuttle not ready for launch!";
